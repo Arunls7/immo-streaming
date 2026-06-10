@@ -1,0 +1,13 @@
+# ── Pipeline Spark ────────────────────────────────────────────────────────────
+pyspark==3.5.1
+# GraphFrames est récupéré automatiquement par Spark via spark.jars.packages
+# (graphframes:graphframes:0.8.3-spark3.5-s_2.12). Le package PyPI ci-dessous
+# fournit uniquement les bindings Python.
+graphframes-py>=0.6
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+pandas>=2.0.0
+pyarrow>=14.0.0
+plotly>=5.20.0
+pyvis>=0.3.2
