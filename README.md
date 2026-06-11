@@ -1,6 +1,6 @@
 # Immo Streaming — Plateforme d'Analyse de Graphe Temps Réel
 
-Projet d'ingénierie **Big Data & Analyse de Graphes Temps Réel**.
+Projet d'ingénierie **cours électif Spark & Big Data**.
 Simulation d'une plateforme immobilière type *LeBonCoin* : un flux infini
 d'interactions utilisateurs est traité par **PySpark Structured Streaming**,
 modélisé en **graphe de connexions** (GraphFrames) et visualisé en temps réel
@@ -12,10 +12,10 @@ via un **dashboard Streamlit**.
 
 ```
 ┌──────────────┐    JSON     ┌────────────────────────┐   Parquet   ┌──────────────┐
-│  generator   │ ─────────▶  │   PySpark Structured    │ ─────────▶  │  dashboard   │
-│  (producteur)│   fichiers  │   Streaming + GraphFrames│   vertices  │  (Streamlit) │
-└──────────────┘             └────────────────────────┘   edges     └──────────────┘
-                                                            metrics
+│  generator   │ ─────────▶  │   PySpark Structured   │ ─────────▶  │  dashboard   │
+│  (producteur)│   fichiers  │ Streaming + GraphFrames│   vertices  │ (Streamlit)  │
+└──────────────┘             └────────────────────────┘    edges     └──────────────┘
+                                                          metrics
 ```
 
 Le découplage par fichiers (JSON en entrée, Parquet en sortie) rend chaque
