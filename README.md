@@ -1,4 +1,4 @@
-# 🏠 Immo Streaming — Plateforme d'Analyse de Graphe Temps Réel
+# Immo Streaming — Plateforme d'Analyse de Graphe Temps Réel
 
 Projet d'ingénierie **Big Data & Analyse de Graphes Temps Réel**.
 Simulation d'une plateforme immobilière type *LeBonCoin* : un flux infini
@@ -8,7 +8,7 @@ via un **dashboard Streamlit**.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌──────────────┐    JSON     ┌────────────────────────┐   Parquet   ┌──────────────┐
@@ -24,7 +24,7 @@ traitement de flux, et inversement.
 
 ---
 
-## 📂 Structure du projet
+## Structure du projet
 
 ```
 immo_streaming/
@@ -44,7 +44,7 @@ immo_streaming/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 # 1. Environnement virtuel (recommandé)
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Lancement
+## Lancement
 
 Ouvrir **trois terminaux** à la racine du projet (`immo_streaming/`).
 
@@ -80,7 +80,7 @@ après le premier micro-batch (~5 s).
 
 ---
 
-## 🧩 Concepts PySpark mis en œuvre
+## Concepts PySpark mis en œuvre
 
 | Concept | Implémentation | Fichier |
 |---|---|---|
@@ -97,7 +97,7 @@ démontrer concrètement le rôle du watermark.
 
 ---
 
-## 📊 Modèle de graphe
+## Modèle de graphe
 
 - **Nœuds** : `USER` (🔵), `SELLER` (🟠), `PRODUCT` (🟢)
 - **Arêtes orientées** :
@@ -106,14 +106,13 @@ démontrer concrètement le rôle du watermark.
 
 ---
 
-## 🛠️ Paramétrage
+##  Paramétrage
 
 Tout se règle dans `config/settings.py` : débit du générateur, taille des
 fenêtres, délai de watermark, cadence des micro-batches, etc.
 
 ---
 
-## 👥 Auteurs
-
-Projet réalisé dans le cadre du module Architecture & Programmation Distribuée
-Big Data — CY Tech.
+##  Auteur
+Kuganesan Arun
+Projet réalisé dans le cadre du cours électif Spark & Big Data à CY Tech.
